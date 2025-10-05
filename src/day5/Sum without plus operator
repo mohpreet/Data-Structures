@@ -1,0 +1,17 @@
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/submissions/1792177746/
+sum without +
+a will result and xor a^b
+b will a & b and left shift  a & b <<1
+repeat till b is null
+
+
+
+2 Merge linked sorted linked list
+
+3
+https://leetcode.com/problems/top-k-frequent-words/description/
+
+
+
+Pendig:
+3 and water tank problem.
