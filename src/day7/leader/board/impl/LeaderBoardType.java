@@ -1,4 +1,4 @@
-package day7;
+package day7.leader.board.impl;
 
 public enum LeaderBoardType {
     BOWLER("BOWLER"),
