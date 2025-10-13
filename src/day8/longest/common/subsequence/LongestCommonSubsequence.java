@@ -16,7 +16,6 @@ public class LongestCommonSubsequence {
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]); // no match
                 }
             }
-
             // Print DP array after each row
             System.out.println("After processing word1[0.." + (i-1) + "] = '" + word1.substring(0, i) + "'");
             printDP(dp, i, m);
