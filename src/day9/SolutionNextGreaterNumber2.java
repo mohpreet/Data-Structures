@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Stack;
 
-//Circular Array
+//Circular Array [pending...]
 class SolutionNextGreaterNumber2 {
     public int[] nextGreaterElement(int[] nums1) {
         HashMap<Integer, Integer> nextBiggerElementMapping = new HashMap<>();

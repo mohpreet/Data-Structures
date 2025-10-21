@@ -1,0 +1,42 @@
+chat gpt system desgin
+
+
+user->chatbox
+      [input, consle to generate outuput,  ]
+
+
+Log aggreation
+	what are the involved component
+	1) logging source
+	2) mechanism to push the record to central non sql db
+	3) scalable durable no sql db
+	4) a ui to send queries
+
+FRs
+		1) real time push the record to central non sql db collection/index
+			structure of the collection will be dependent of the query contract.
+		2) ability to query the logs using queries
+			{
+				logging_level:[info, debug, error]
+				logging_pattern:{}
+				[timestamp]
+				[aggreation]
+				[service name]
+			}
+		3) ability to visualize the logging patterns
+			then i should be to store the query definitions in a collection which can query the results from the
+			actual collections and give the data to ui [chart.js,grafana].
+			Interation of the results of the saved queries and feeding data to the ui componnet will be happening some transaltor provided by the third party library or we have to code the same.
+NFR:
+	durable [we have to give option to the users to configure date before which data has to be deleted]
+	size of the data in each request
+	number of requests per second
+
+hld : refer images :  1001_LogAggreagator, Day1-Log Aggregator
+
+
+
+
+
+
+
